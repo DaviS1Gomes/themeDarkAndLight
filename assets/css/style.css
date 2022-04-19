@@ -1,0 +1,61 @@
+.container{
+ display: flex;
+ width: 200px;
+ height: 80px;
+ border-radius: 150px;
+ border: 5px solid var();
+ position: absolute;
+ left:50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ background-color: var(--label-color);
+}
+
+.circle{
+ margin: 5px;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border-radius: 200%;
+  background-color: blue;
+  transition: .3s;
+}
+
+
+.circlefull{
+  border-radius: 150px;
+  position: absolute;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  left: 0px;
+ transition: .3s;
+  
+}
+.circlefull.active{
+ width: -200px;
+ transition: .3s;
+ transform: translate(60%);
+}
+
+
+
+.btn{
+  display: flex;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 150px;
+  justify-content: space-between;
+}
+
+.sun,
+.moon{
+ width: 30%;
+ margin: 10px;
+}
+ 
+
+.container.active{
+
+}
